@@ -28,13 +28,12 @@ class App extends Component {
         <GlobalStyle />
         <AppWrapper>
           <Header />
-          <Router>
+          
           <Switch>
             <Route exact path='/' component={Feed} />         
             <Route path='/questions/:id' component={Question} />
             <Route path='/questions' component={Feed} />
           </Switch>
-          </Router>
         </AppWrapper>
       </>
     );
